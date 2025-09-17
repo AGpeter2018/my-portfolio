@@ -1,0 +1,51 @@
+.content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+
+.content-right label {
+  color: #d8d8d8;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.content-right input {
+  border: none;
+  width: 700px;
+  height: 78px;
+  padding-left: 20px;
+  border-radius: 4px;
+  background: #32323c;
+  color: #a0a0a0;
+  font-family: Outfit;
+  font-size: 20px;
+}
+
+.content-right textarea {
+  width: 650px;
+  border: none;
+  padding: 25px;
+  border-radius: 4px;
+  background: #32323c;
+  color: #a0a0a0;
+  font-family: Outfit;
+  font-size: 20px;
+}
+
+.content-right .contact-submit {
+  border: none;
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #8415ff 106.28%);
+  font-size: 32px;
+  padding: 20px 60px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-submit:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}

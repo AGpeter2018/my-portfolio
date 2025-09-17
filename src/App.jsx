@@ -5,6 +5,7 @@ import Hero from "./components/hero/hero.component";
 import AboutMe from "./components/about-component/about.component";
 import Service from "./components/services-component/services.component";
 import MyWork from "./components/my-work-component/my-work.component";
+import Content from "./components/content-component/content.component";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutMe />
       <Service />
       <MyWork />
+      <Content />
     </div>
   );
 }

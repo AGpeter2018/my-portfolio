@@ -1,0 +1,13 @@
+.content-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #d8d8d8;
+  font-size: 22px;
+}
+
+.content-detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
