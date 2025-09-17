@@ -9,7 +9,9 @@ function Hero() {
     <div className="hero">
       <img src={imageProfile} alt="" />
       <h1>
-        <span>I'm Adeniji Peter,</span>frontend developer
+        <span>I'm Adeniji Peter,</span>
+        <br />
+        frontend developer
       </h1>
       <p>I am a frontend developer from Nigeria</p>
       <div className="hero-action">
