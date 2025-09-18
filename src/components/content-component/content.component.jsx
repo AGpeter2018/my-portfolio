@@ -7,7 +7,7 @@ import "./content.style.css";
 
 const Content = () => {
   return (
-    <div className="content">
+    <div id="contact" className="content">
       <div className="content-title">
         <h1>Get in touch</h1>
         <img src={theme_pattern} alt="" />

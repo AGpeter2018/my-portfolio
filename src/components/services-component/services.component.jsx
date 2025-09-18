@@ -7,7 +7,7 @@ import services_data from "../../assets/services_data";
 import "./services.style.css";
 const Service = () => {
   return (
-    <div className="services">
+    <div id="services" className="services">
       <div className="services-title">
         <h1>My Services</h1>
         <img src={theme_pattern} alt="" />

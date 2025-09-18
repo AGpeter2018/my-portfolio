@@ -9,7 +9,7 @@ import mywork_data from "../../assets/mywork_data";
 
 const MyWork = () => {
   return (
-    <div className="my-work">
+    <div id="work" className="my-work">
       <div className="myWork-title">
         <h1>My latest work</h1>
         <img src={themw_pattern} alt="" />

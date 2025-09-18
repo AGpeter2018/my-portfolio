@@ -6,7 +6,7 @@ import "./hero.style.css";
 
 function Hero() {
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <img src={imageProfile} alt="" />
       <h1>
         <span>I'm Adeniji Peter,</span>
