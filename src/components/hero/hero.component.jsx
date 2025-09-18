@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import imageProfile from "../../assets/profile_img.svg";
 
@@ -15,7 +16,11 @@ function Hero() {
       </h1>
       <p>I am a frontend developer from Nigeria</p>
       <div className="hero-action">
-        <div className="hero-connect">Connect with me</div>
+        <div className="hero-connect">
+          <AnchorLink className="anchor-link" offset={50} href="#contact">
+            Connect with me
+          </AnchorLink>
+        </div>
         <div className="hero-resume">My resume</div>
       </div>
     </div>
