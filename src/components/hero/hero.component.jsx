@@ -21,7 +21,11 @@ function Hero() {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My resume</div>
+        <div className="hero-resume">
+          <a href="/my-resume.pdf" download="my-resume.pdf">
+            My resume
+          </a>
+        </div>
       </div>
     </div>
   );
