@@ -42,3 +42,38 @@
   font-size: 24px;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .about {
+    gap: 80px;
+    align-items: start;
+    margin: 50px 70px;
+  }
+
+  .about-title h1 {
+    font-size: 50px;
+    padding: 0;
+  }
+
+  .about-title img {
+    width: 130px;
+    right: -20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-left {
+    display: none;
+  }
+
+  .about-info {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .about-info p {
+    width: 80%;
+  }
+}

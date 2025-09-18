@@ -30,3 +30,18 @@
   border-radius: 50px;
   background: linear-gradient(267deg, #df8908 -5.09%, #b415ff 106.28%);
 }
+
+@media (max-width: 768px) {
+  .about-skill {
+    gap: 20px;
+    align-items: center;
+  }
+
+  .about-skill p {
+    font-size: 20px;
+  }
+
+  .about-skill hr {
+    height: 6px;
+  }
+}

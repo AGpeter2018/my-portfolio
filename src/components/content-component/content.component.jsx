@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 import theme_pattern from "../../assets/theme_pattern.svg";
 import ContentDetail from "../content-details-component/content-detail.component";
