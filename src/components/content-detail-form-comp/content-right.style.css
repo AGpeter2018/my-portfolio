@@ -49,3 +49,24 @@
   transform: scale(1.1);
   transition: 0.3s;
 }
+
+@media (max-width: 768px) {
+  .content-right label {
+    font-size: 20px;
+  }
+
+  .content-right input {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .content-right textarea {
+    width: 95%;
+    font-size: 20px;
+  }
+
+  .contact-submit {
+    font-size: 20px;
+    padding: 15px 40px;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
 import theme_pattern from "../../assets/theme_pattern.svg";
-import profile_img from "../../assets/about_profile.svg";
+import profile_img from "../../assets/large.jpg";
 import AboutSkills from "../skills-component/skill.component";
 import AboutAchievements from "../achievement-component/achievement.component";
 

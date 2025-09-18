@@ -1,14 +1,14 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import imageProfile from "../../assets/profile_img.svg";
+import imageProfile from "../../assets/profile.jpg";
 
 import "./hero.style.css";
 
 function Hero() {
   return (
     <div id="home" className="hero">
-      <img src={imageProfile} alt="" />
+      <img src={imageProfile} alt="" className="hero-img" />
       <h1>
         <span>I'm Adeniji Peter,</span>
         <br />

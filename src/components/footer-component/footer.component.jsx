@@ -1,6 +1,6 @@
 import React from "react";
 
-import FooterLogo from "../../assets/footer_logo.svg";
+import FooterLogo from "../../assets/peter_logo.png";
 import UserIcon from "../../assets/user_icon.svg";
 import "./footer.style.css";
 
@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-top">
         <div className="footer-top_left">
-          <img src={FooterLogo} alt="" />
+          <img src={FooterLogo} alt="" className="logo" />
           <p>
             Showcasing my skills, projects, and experiences in web development
             and design. Open to collaborations and opportunities.

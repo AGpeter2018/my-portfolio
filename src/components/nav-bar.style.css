@@ -13,6 +13,14 @@
   font-size: 20px;
 }
 
+.logo {
+  display: block;
+  background-color: white;
+  border-radius: 50px;
+  /* width: 5rem;
+  height: 4rem; */
+}
+
 .nav-connect {
   padding: 20px 40px;
   border-radius: 50px;
@@ -41,4 +49,57 @@
 .anchor-link {
   text-decoration: none;
   color: white;
+}
+
+.nav-close {
+  display: none;
+}
+
+.menu-nav-open {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    margin: 20px 50px;
+  }
+
+  .nav-connect {
+    display: none;
+  }
+
+  .menu-nav-open {
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+
+  .nav-close {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 150px;
+    width: 30px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+  }
+
+  .nav-menu li {
+    font-size: 30px;
+    padding-left: 8 0px;
+    flex-direction: row;
+    gap: 20px;
+  }
 }

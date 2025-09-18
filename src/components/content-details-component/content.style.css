@@ -11,3 +11,13 @@
   align-items: center;
   gap: 20px;
 }
+
+@media (max-width: 768px) {
+  .content-detail {
+    gap: 20px;
+  }
+
+  .content-detail img {
+    width: 25px;
+  }
+}
