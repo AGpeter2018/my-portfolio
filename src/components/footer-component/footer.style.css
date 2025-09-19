@@ -79,7 +79,8 @@
 
 @media (max-width: 768px) {
   .footer {
-    margin: 50px 70px;
+    margin: 50px 150px;
+    /* text-align: center; */
   }
 
   .footer-top {
@@ -96,5 +97,9 @@
   .footer-email_input input {
     width: 100%;
     font-size: 20px;
+  }
+
+  .footer-bottom_right {
+    padding-left: 55px;
   }
 }

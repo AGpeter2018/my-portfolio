@@ -32,6 +32,9 @@
 }
 
 @media (max-width: 768px) {
+  .about-skills {
+    text-align: center;
+  }
   .about-skill {
     gap: 20px;
     align-items: center;

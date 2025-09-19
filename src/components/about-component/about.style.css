@@ -46,8 +46,8 @@
 @media (max-width: 768px) {
   .about {
     gap: 80px;
-    align-items: start;
-    margin: 50px 70px;
+    align-items: center;
+    /* margin: 50px 70px; */
   }
 
   .about-title h1 {
@@ -73,7 +73,7 @@
     line-height: 32px;
   }
 
-  .about-info p {
+  /* .about-info p {
     width: 80%;
-  }
+  } */
 }

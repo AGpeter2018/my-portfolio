@@ -76,7 +76,7 @@
   .my-work {
     gap: 50px;
     margin: 50px 70px;
-    align-items: start;
+    align-items: center;
   }
 
   .myWork-title h1 {

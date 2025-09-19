@@ -24,6 +24,9 @@ const ContentRight = () => {
           name="message"
           rows="8"
           placeholder="Enter your message"
+          resize="none"
+          width="300"
+          height="150"
           required
         ></textarea>
         <button type="submit" className="contact-submit">
