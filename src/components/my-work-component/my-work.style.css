@@ -62,6 +62,11 @@
   cursor: pointer;
 }
 
+.show-more a {
+  color: white;
+  text-decoration: none;
+}
+
 .show-more:hover {
   gap: 30px;
   transition: 0.6s;

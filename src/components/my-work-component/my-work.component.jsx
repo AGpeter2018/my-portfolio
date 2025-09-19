@@ -20,7 +20,13 @@ const MyWork = () => {
         })}
       </div>
       <div className="show-more">
-        <p>Show more</p>
+        <a
+          href="https://github.com/AGpeter2018"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Show more
+        </a>
         <img src={ArrowIcon} alt="" />
       </div>
     </div>
