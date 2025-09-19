@@ -71,7 +71,9 @@
 
 @media (max-width: 768px) {
   .hero {
-    margin: 3rem 8rem;
+    gap: 80px;
+    align-items: start;
+    margin: 50px 70px;
   }
   .hero-img {
     margin-top: 120px;
