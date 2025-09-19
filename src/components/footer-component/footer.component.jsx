@@ -2,6 +2,7 @@ import React from "react";
 
 import FooterLogo from "../../assets/peter_logo.png";
 import UserIcon from "../../assets/user_icon.svg";
+import SocialIcon from "../social-icon-component/social-icon.component";
 import "./footer.style.css";
 
 const Footer = () => {
@@ -15,13 +16,19 @@ const Footer = () => {
             and design. Open to collaborations and opportunities.
           </p>
         </div>
-        <div className="footer-top_right">
+        <form
+          action="https://formspree.io/f/movnookg" // your endpoint URL
+          method="POST"
+          className="footer-top_right"
+        >
           <div className="footer-email_input">
             <img src={UserIcon} alt="" />
-            <input type="email" placeholder="Enter your email" />
+            <input type="email" placeholder="Enter your email" name="email" />
           </div>
-          <div className="footer-sub">Subscribe</div>
-        </div>
+          <button type="submit" className="footer-sub">
+            Subscribe
+          </button>
+        </form>
       </div>
       <hr />
       <div className="footer-bottom">
@@ -29,9 +36,7 @@ const Footer = () => {
           © 2025 Adeniji Peter Oluwasegun. All rights reserved.
         </p>
         <div className="footer-bottom_right">
-          <p>Term of Services</p>
-          <p>Privacy Policy</p>
-          <p>Connect with me</p>
+          <SocialIcon className="footer-icon" />
         </div>
       </div>
     </div>

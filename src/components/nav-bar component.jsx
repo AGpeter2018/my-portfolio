@@ -6,6 +6,8 @@ import underline from "../assets/nav_underline.svg";
 import menu_open from "../assets/menu_open.svg";
 import menu_close from "../assets/menu_close.svg";
 
+import SocialIcon from "./social-icon-component/social-icon.component";
+
 import "./nav-bar.style.css";
 
 const NavBar = () => {
@@ -66,6 +68,9 @@ const NavBar = () => {
           </AnchorLink>
           {menu === "contact" ? <img src={underline} alt="" /> : ""}
         </li>
+        <div className="nav-social">
+          <SocialIcon />
+        </div>
       </ul>
       <div className="nav-connect">
         {" "}

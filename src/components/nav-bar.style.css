@@ -59,6 +59,10 @@
   display: none;
 }
 
+.nav-social {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav-bar {
     margin: 20px 50px;
@@ -101,5 +105,10 @@
     padding-left: 8 0px;
     flex-direction: row;
     gap: 20px;
+  }
+
+  .nav-social {
+    display: block;
+    padding-right: 55px;
   }
 }

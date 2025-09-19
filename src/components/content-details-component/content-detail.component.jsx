@@ -4,6 +4,8 @@ import mail from "../../assets/mail_icon.svg";
 import location from "../../assets/location_icon.svg";
 import call from "../../assets/call_icon.svg";
 
+import SocialIcon from "../social-icon-component/social-icon.component";
+
 import "./content.style.css";
 
 const contentDetails = [
@@ -23,6 +25,7 @@ const ContentDetail = () => {
           </div>
         );
       })}
+      <SocialIcon />
     </div>
   );
 };

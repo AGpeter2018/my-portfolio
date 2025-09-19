@@ -1,0 +1,12 @@
+.social {
+  margin-left: 4rem;
+}
+
+.social a {
+  padding: 0 1rem;
+  color: white;
+}
+
+.social a:hover {
+  color: gray;
+}
