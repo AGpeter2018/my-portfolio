@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -105,5 +105,173 @@
 
   .hero-resume {
     padding: 20px 50px;
+  }
+} */
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.hero img {
+  margin-top: 150px;
+}
+
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 90px;
+  font-weight: 600;
+}
+
+.hero h1 span {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.hero-connect {
+  padding: 25px 45px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #df8908 -5.09%, #b415ff 106.28%);
+  cursor: pointer;
+}
+
+.hero-resume {
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.hero-resume a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero-connect:hover {
+  border: 2px solid white;
+}
+
+.hero-resume:hover {
+  border-color: #b415ff;
+}
+
+.hero-img {
+  border-radius: 50px;
+}
+
+/* ========== Tablet (768px and below) ========== */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-img {
+    margin-top: 120px;
+    width: 260px;
+  }
+
+  .hero h1 {
+    margin-top: 50px;
+    width: 90%;
+    font-size: 50px;
+  }
+
+  .hero p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 10px 0px;
+  }
+
+  .hero-action {
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  .hero-connect {
+    padding: 20px 30px;
+    border-radius: 40px;
+  }
+
+  .hero-resume {
+    padding: 20px 50px;
+  }
+}
+
+/* ========== Mobile (430px and below) ========== */
+@media (max-width: 430px) {
+  .hero-img {
+    width: 220px;
+    margin-top: 100px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    width: 95%;
+  }
+
+  .hero p {
+    width: 85%;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .hero-action {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 15px 30px;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/* ========== Small Phones (375px and below) ========== */
+@media (max-width: 375px) {
+  .hero-img {
+    width: 200px;
+    margin-top: 90px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    width: 90%;
+    line-height: 26px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 12px 25px;
+    width: 90%;
+    font-size: 14px;
   }
 }

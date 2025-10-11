@@ -1,4 +1,4 @@
-.about-skills {
+/* .about-skills {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -46,5 +46,84 @@
 
   .about-skill hr {
     height: 6px;
+  }
+} */
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-skill {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.about-skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.about-skill p {
+  min-width: 150px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.about-skill hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 8px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #df8908 -5.09%, #b415ff 106.28%);
+}
+
+/* ✅ Tablet responsiveness */
+@media (max-width: 768px) {
+  .about-skills {
+    text-align: center;
+  }
+
+  .about-skill {
+    gap: 25px;
+    align-items: center;
+  }
+
+  .about-skill p {
+    font-size: 20px;
+  }
+
+  .about-skill hr {
+    height: 6px;
+    width: 60%;
+  }
+}
+
+/* ✅ Mobile screens (375px and below) */
+@media (max-width: 375px) {
+  .about-skills {
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .about-skill {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-skill p {
+    font-size: 18px;
+    min-width: auto;
+    text-align: center;
+  }
+
+  .about-skill hr {
+    width: 80%;
+    height: 5px;
   }
 }
