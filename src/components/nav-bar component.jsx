@@ -23,6 +23,7 @@ const NavBar = () => {
 
   return (
     <div className="nav-bar">
+      <div className="wrap">
       <img src={logo} alt="" className="logo" />
       <img
         src={menu_open}
@@ -77,6 +78,7 @@ const NavBar = () => {
         <AnchorLink className="anchor-link" offset={50} href="#contact">
           Connect with me
         </AnchorLink>
+      </div>
       </div>
     </div>
   );

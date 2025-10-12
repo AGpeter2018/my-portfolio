@@ -5,12 +5,24 @@
   margin: 20px 170px;
 }
 
+.wrap {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #1f0016;
+  z-index: 99;
+
+}
+
 .nav-bar .nav-menu {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 60px;
   font-size: 20px;
+  margin-left: 200px;
 }
 
 .logo {
@@ -18,8 +30,6 @@
   background-color: white;
   border-radius: 50px;
 
-  /* width: 5rem;
-  height: 4rem; */
 }
 
 .nav-connect {
@@ -29,6 +39,9 @@
   font-size: 20px;
   cursor: pointer;
   transition: 0.5s;
+  margin-left: 170px;
+
+
 }
 
 .nav-connect:hover {
@@ -68,6 +81,19 @@
   .nav-bar {
     margin: 20px 50px;
     width: 100px;
+
+  }
+
+  .wrap {
+    background: #1f0016;
+    width: 560px;
+    position: fixed;
+    z-index: 99;
+
+  }
+
+  .logo {
+    margin-right: 550px;
   }
 
   .nav-connect {
@@ -84,7 +110,7 @@
     display: block;
     position: relative;
     top: 30px;
-    left: 150px;
+    left: 120px;
     width: 30px;
   }
 
@@ -104,13 +130,13 @@
 
   .nav-menu li {
     font-size: 30px;
-    padding-left: 8 0px;
+    padding-left: 8px 20px;
     flex-direction: row;
     gap: 20px;
   }
 
   .nav-social {
     display: block;
-    padding-right: 55px;
+    margin: 0 auto;
   }
 }
