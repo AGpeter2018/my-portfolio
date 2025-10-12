@@ -34,7 +34,12 @@
 
 @media (max-width: 768px) {
   .about-achievements {
-    justify-content: space-between;
+    display: flex;
+    width: 200%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    border: 2px solid red;
+
   }
 
   .about-achievement {

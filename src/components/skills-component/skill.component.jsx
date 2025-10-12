@@ -10,16 +10,28 @@ const skills = [
 const AboutSkills = () => {
   return (
     <div className="about-skills">
-      {skills.map((skill, index) => (
+      {/* {skills.map((skill, index) => (
         <div className="about-skill" key={index}>
-          <div>
             <p>{skill.name}</p>
-          </div>
-          <div>
-            <hr style={{ width: skill.level }} />
-          </div>
+            <hr style={{ width: skill.level }} />       
         </div>
-      ))}
+      ))} */}
+      <div className="about-skill">
+        <p>HTML & CSS</p>
+        <hr className="html-class" />
+      </div>
+      <div className="about-skill">
+        <p>JavaScript</p>
+        <hr className="JavaScript-class" />
+      </div>
+      <div className="about-skill">
+        <p>React JS</p>
+        <hr className="JS-class" />
+      </div>
+      <div className="about-skill">
+        <p>Next JS</p>
+        <hr className="Next-class" />
+      </div>
     </div>
   );
 };

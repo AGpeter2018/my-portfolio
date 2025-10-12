@@ -1,4 +1,4 @@
-/* .about {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,6 +53,7 @@
   .about-title h1 {
     font-size: 50px;
     padding: 0;
+    width: max-content;
   }
 
   .about-title img {
@@ -104,9 +105,9 @@
   .about-right {
     gap: 40px;
   }
-} */
+}
 
-.about {
+/* .about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +116,7 @@
   margin: 80px 170px;
 }
 
-/* ==== TITLE SECTION ==== */
+
 .about-title {
   position: relative;
 }
@@ -133,7 +134,7 @@
   z-index: -1;
 }
 
-/* ==== MAIN SECTION ==== */
+
 .about-section {
   display: flex;
   gap: 80px;
@@ -161,12 +162,10 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
-  color: #222;
+  color: #fff;
 }
 
-/* ============================= */
-/* 📱 SMALL SCREENS (Phones ≤768px) */
-/* ============================= */
+
 @media (max-width: 768px) {
   .about {
     gap: 60px;
@@ -190,7 +189,7 @@
 
   .about-left {
     display: none;
-    /* hide image for smaller screens */
+    
   }
 
   .about-info {
@@ -200,9 +199,7 @@
   }
 }
 
-/* ============================= */
-/* 📱 EXTRA SMALL SCREENS (≤375px) */
-/* ============================= */
+
 @media (max-width: 375px) {
   .about {
     margin: 30px 20px;
@@ -233,9 +230,7 @@
   }
 }
 
-/* ============================= */
-/* 💻 LARGE SCREENS (≥1280px) */
-/* ============================= */
+
 @media (min-width: 1280px) {
   .about {
     margin: 120px 220px;
@@ -258,4 +253,4 @@
   .about-section {
     gap: 120px;
   }
-}
+} */
