@@ -43,6 +43,14 @@
   font-weight: 500;
 }
 
+.about-info p {
+  width: 90%;
+  padding-top: 10px;
+  padding-left: 25px;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .about {
     gap: 80px;

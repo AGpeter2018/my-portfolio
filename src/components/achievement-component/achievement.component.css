@@ -1,8 +1,13 @@
 .about-achievements {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 40px;
   width: 100%;
-  justify-content: space-around;
-  margin-bottom: 80px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 60vh;
 }
 
 .about-achievement {
@@ -32,27 +37,34 @@
   font-weight: 500;
 }
 
+/* ✅ hr appears vertical between items on large screens */
+.about-achievements hr {
+  width: 2px;
+  height: 80px;
+  background: #b415ff;
+  border: none;
+  opacity: 0.4;
+}
+
+/* ✅ Responsive adjustments for small screens */
 @media (max-width: 768px) {
   .about-achievements {
-    display: flex;
-    width: 200%;
-    justify-content: space-around;
-    margin-bottom: 80px;
-    border: 2px solid red;
-
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
   }
 
-  .about-achievement {
-    gap: 10px;
+  .about-achievements hr {
+    width: 80%;
+    height: 2px;
+    background: #b415ff;
   }
 
   .about-achievement h1 {
     font-size: 34px;
-    font-weight: 700;
   }
 
   .about-achievement p {
-    text-align: center;
     font-size: 16px;
   }
 }
