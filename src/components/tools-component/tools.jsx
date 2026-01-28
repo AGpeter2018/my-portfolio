@@ -1,26 +1,26 @@
 import React from "react";
 import {
-    SiPostman, SiFigma,
-    SiSlack, SiSpotify
+    SiFigma, SiSlack, SiSpotify,
+    SiTailwindcss, SiMongodb, SiExpress, SiNodedotjs, SiCloudinary, SiFirebase
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { FaTerminal, FaChrome } from "react-icons/fa";
+import { FaTerminal, FaChrome, FaReact } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "./tools.style.css";
 
 const toolsData = [
-    { name: "VS Code", icon: <VscVscode />, desc: "Primary IDE" },
-    { name: "Terminal", icon: <FaTerminal />, desc: "Power Shell/Bash" },
-    { name: "Figma", icon: <SiFigma />, desc: "Design & UX" },
-    { name: "Postman", icon: <SiPostman />, desc: "API Testing" },
-    { name: "Chrome", icon: <FaChrome />, desc: "Debug tool" },
-    { name: "Slack", icon: <SiSlack />, desc: "Team Comms" },
+    { group: "Frontend", name: "React", icon: <FaReact />, desc: "Library & Logic" },
+    { group: "Frontend", name: "Tailwind", icon: <SiTailwindcss />, desc: "Modern CSS" },
+    { group: "Backend", name: "Node.js", icon: <SiNodedotjs />, desc: "Server Logic" },
+    { group: "Database", name: "MongoDB", icon: <SiMongodb />, desc: "NoSQL Data" },
+    { group: "Cloud", name: "Firebase", icon: <SiFirebase />, desc: "Real-time & Auth" },
+    { group: "Cloud", name: "Cloudinary", icon: <SiCloudinary />, desc: "Digital Assets" },
 ];
 
 const ToolsShowcase = () => {
     return (
         <section className="tools-section">
-            <h2 className="section-title">My <span>Workflow</span></h2>
+            <h2 className="section-title">High-End <span>Tech Stack</span></h2>
             <div className="tools-grid">
                 {toolsData.map((tool, index) => (
                     <motion.div
@@ -32,6 +32,7 @@ const ToolsShowcase = () => {
                         transition={{ delay: index * 0.1 }}
                         viewport={{ once: true }}
                     >
+                        <span className="tool-group">{tool.group}</span>
                         <div className="tool-icon">{tool.icon}</div>
                         <h3>{tool.name}</h3>
                         <p>{tool.desc}</p>

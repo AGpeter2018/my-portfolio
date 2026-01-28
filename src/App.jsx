@@ -15,6 +15,7 @@ import ResumeModal from "./components/resume-modal-component/resume-modal";
 
 import ScrollToTop from "./components/scroll-top-component/scroll-top";
 
+import Architecture from "./components/architecture-component/architecture";
 import FeaturedCaseStudy from "./components/case-study-component/case-study";
 import GitHubStats from "./components/github-stats-component/github-stats";
 import Testimonials from "./components/testimonials-component/testimonials";
@@ -37,6 +38,7 @@ function App() {
       <Cursor />
       <NavBar openResume={() => setIsModalOpen(true)} />
       <Hero openResume={() => setIsModalOpen(true)} />
+      <Architecture />
       <FeaturedCaseStudy />
       <AboutMe />
       <ToolsShowcase />

@@ -49,16 +49,16 @@ const Hero = ({ openResume }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        <span className="gradient-text">I'm Adeniji Peter,</span> frontend
-        developer based in Nigeria.
+        <span className="gradient-text">I'm Adeniji Peter,</span> Software Engineer
+        & Digital Solutions Architect.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
       >
-        I specialize in creating seamless, interactive, and high-performance web
-        interfaces that deliver exceptional user experiences.
+        I engineer robust, end-to-end web applications with a focus on scalable systems,
+        seamless user interfaces, and cloud-native architectures using Firebase and Node.js.
       </motion.p>
       <motion.div
         className="hero-action"
