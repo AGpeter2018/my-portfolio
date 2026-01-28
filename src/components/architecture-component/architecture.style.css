@@ -1,0 +1,70 @@
+.arch-section {
+    padding: 80px 10%;
+    text-align: center;
+    background: rgba(185, 35, 225, 0.02);
+}
+
+.arch-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.arch-card {
+    padding: 40px;
+    min-width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.arch-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px currentColor);
+}
+
+.arch-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.arch-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.arch-card li {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.arch-arrow {
+    font-size: 24px;
+    color: rgba(185, 35, 225, 0.4);
+}
+
+@media (max-width: 1024px) {
+    .arch-arrow {
+        transform: rotate(90deg);
+    }
+
+    .arch-flow {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .arch-section {
+        padding: 60px 5%;
+    }
+}

@@ -42,16 +42,15 @@ const AboutMe = () => {
         >
           <div className="about-info">
             <p>
-              "I’m a Frontend Developer passionate about building simple,
-              secure, and user-friendly interfaces while continuously growing my
-              skills."
+              "I am a Software Engineer focused on designing scalable,
+              efficient, and secure digital architectures. I bridge the gap between
+              complex backend logic and intuitive frontend interactions."
             </p>
             <p>
-              Through hands-on projects, I’ve gained practical experience in
-              building interactive features, improving performance, and
-              enhancing user experience. I’m always exploring new tools and best
-              practices to grow as a developer and deliver clean, modern
-              solutions.
+              My approach goes beyond writing code; I engineer robust end-to-end solutions
+              using the latest cloud-native technologies. From optimizing database queries
+              to perfecting liquid-smooth UI animations, I ensure every system I build is
+              performant, accessible, and ready for scale.
             </p>
           </div>
           <AboutSkills />
