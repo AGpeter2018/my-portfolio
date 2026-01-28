@@ -1,0 +1,130 @@
+.case-study-section {
+    padding: 80px 10%;
+    width: 100%;
+}
+
+.case-study-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+    overflow: hidden;
+}
+
+.case-study-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 15px;
+    background: rgba(185, 35, 225, 0.1);
+    border: 1px solid rgba(185, 35, 225, 0.2);
+    color: #b923e1;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.case-study-content h2 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.case-study-content h2 span {
+    background: var(--accent-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.case-desc {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+
+.key-results {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.result-item svg {
+    color: #b923e1;
+}
+
+.case-cta {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.case-study-img {
+    flex: 1;
+}
+
+.case-study-img img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1024px) {
+    .case-study-container {
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .case-cta {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-study-section {
+        padding: 60px 5%;
+    }
+
+    .case-study-container {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .case-study-content h2 {
+        font-size: 32px;
+    }
+
+    .case-desc {
+        font-size: 16px;
+    }
+
+    .key-results {
+        text-align: left;
+        display: inline-flex;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-study-content h2 {
+        font-size: 28px;
+    }
+
+    .badge {
+        font-size: 11px;
+    }
+}

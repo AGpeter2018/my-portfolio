@@ -1,0 +1,50 @@
+.github-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.github-stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.github-card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.github-card {
+    padding: 20px;
+    min-width: 300px;
+    max-width: 100%;
+}
+
+.github-card img {
+    width: 100%;
+    height: auto;
+}
+
+.github-cta {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .github-section {
+        padding: 60px 5%;
+    }
+
+    .github-card {
+        min-width: unset;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .github-card-wrapper {
+        gap: 15px;
+    }
+}

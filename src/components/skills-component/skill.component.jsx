@@ -1,37 +1,34 @@
+import React from "react";
+import { motion } from "framer-motion";
 import "./skill.style.css";
 
-const skills = [
-  { name: "HTML & CSS", level: "300px" },
-  { name: "JavaScript", level: "390px" },
-  { name: "React JS", level: "350px" },
-  { name: "Next JS", level: "300px" },
+const skillsData = [
+  { name: "HTML & CSS", level: "80%" },
+  { name: "JavaScript", level: "90%" },
+  { name: "React JS", level: "85%" },
+  { name: "Next JS", level: "75%" },
 ];
 
 const AboutSkills = () => {
   return (
     <div className="about-skills">
-      {/* {skills.map((skill, index) => (
+      {skillsData.map((skill, index) => (
         <div className="about-skill" key={index}>
+          <div className="skill-info">
             <p>{skill.name}</p>
-            <hr style={{ width: skill.level }} />       
+            <span>{skill.level}</span>
+          </div>
+          <div className="skill-bar-container">
+            <motion.div
+              className="skill-bar-fill"
+              initial={{ width: 0 }}
+              whileInView={{ width: skill.level }}
+              transition={{ duration: 1, delay: 0.2 * index, ease: "easeOut" }}
+              viewport={{ once: true }}
+            />
+          </div>
         </div>
-      ))} */}
-      <div className="about-skill">
-        <p>HTML & CSS</p>
-        <hr className="html-class" />
-      </div>
-      <div className="about-skill">
-        <p>JavaScript</p>
-        <hr className="JavaScript-class" />
-      </div>
-      <div className="about-skill">
-        <p>React JS</p>
-        <hr className="JS-class" />
-      </div>
-      <div className="about-skill">
-        <p>Next JS</p>
-        <hr className="Next-class" />
-      </div>
+      ))}
     </div>
   );
 };

@@ -1,0 +1,44 @@
+.preloader {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-color);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.preloader-logo {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.load-bar {
+    width: 200px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.load-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--accent-gradient);
+}
+
+.preloader-content .percent {
+    font-family: monospace;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+}

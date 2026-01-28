@@ -1,0 +1,46 @@
+.tech-marquee-container {
+    width: 100%;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+    margin: 60px 0;
+}
+
+.marquee-content {
+    display: flex;
+    width: max-content;
+    gap: 60px;
+    animation: scroll 40s linear infinite;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
+    transition: var(--transition-smooth);
+}
+
+.tech-item:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.tech-icon {
+    font-size: 30px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
